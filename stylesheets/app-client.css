@@ -1,0 +1,4 @@
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "ChunkyPNG::ExpectationFailed: Couldn't read 8 bytes from IO stream."; }

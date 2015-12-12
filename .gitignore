@@ -1,0 +1,77 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# your secret environment variables
+.env
+env.json
+
+# compiled output
+/dist
+/tmp
+*.md5
+
+# dependencies
+/node_modules
+/bower_components
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage/*
+/libpeerconnection.log
+npm-debug.log
+testem.log
+
+.DS_Store
+
+# db
+db/*.sqlite3
+db/schema.rb
+db/structure.sql
+
+# doc
+doc/api
+doc/app
+nbproject
+nbproject/**
+
+# bundler
+# .bundle/
+vendor/bundle/
+
+log/
+tmp/
+
+# /public/
+public/cache/
+public/javascripts/cache/
+public/stylesheets/cache/
+public/system
+
+# emacs & vim
+*~
+\#*#
+.#*
+._*
+*.swp
+Session.vim
+
+# IDEs
+.idea/
+.project/
+.externalToolBuilders/
+
+.DS_Store
+.settings/
+
+/.project
+/.loadpath
+*.project
+*.loadpath
+.idea
+.project
+.ruby-version
+.ruby-gemset
+.rvmrc
+.svn
+.bundle
+Thumbs.db

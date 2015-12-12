@@ -1,0 +1,49 @@
+.golden-row, .golden-row {
+  border: 1px solid red;
+}
+.golden-col-5, .golden-col-7 {
+  border: 1px solid blue;
+}
+
+.background-with-compass {
+  background: image-url('/images/icons/zoomin.png') 0 0 repeat;
+}
+
+@import "icons/*.png";
+$icons-spacing: 5px;
+$icons-layout: 'smart';
+$icons-sprite-dimensions: true;
+@include all-icons-sprites;
+
+@import "compass/css3";
+@include font-face("The Million Mile Man", font-files("example.ttf"));
+.example-font {
+  font-family: "The Million Mile Man";
+  font-size: 1.5em;
+}
+
+/* http://thesassway.com/intermediate/spriting-with-sass-and-compass
+.icons-sprite(...)
+.icons-zoomin
+.icons-zoomout
+
+.zoomin-icon { @include icons-sprite(zoomin); }
+.zoomout-icon { @include icons-sprite(zoomout); }
+
+.actions {
+  .new    { @include icons-sprite(zoomin);    }
+  .edit   { @include icons-sprite(zoomout);   }
+}
+
+*/
+.exmaple-with-sprite-zoomin{
+  @include icons-sprite(zoomin);
+  // todo: line-height like the image plus few pixels
+  margin-top: -(image-height(sprite-file($icons-sprites, zoomin)) / 2);
+}
+.exmaple-with-sprite-zoomout{
+  @include icons-sprite(zoomout);
+  // todo: line-height like the image plus few pixels
+  margin-top: -(image-height(sprite-file($icons-sprites, zoomout)) / 2);
+}
+
